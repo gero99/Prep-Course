@@ -55,13 +55,20 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-}
+return palabras.join(" ");
+} 
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+    if(array.indexOf(elemento) >= 0){
+      return true;
+    } else {
+      return false;
+    }
+  
 }
 
 
@@ -69,6 +76,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let sumOfInt = 0;
+  for(let i = 0; i < numeros.length; i++){
+    sumOfInt = sumOfInt + numeros[i];
+    
+  }return sumOfInt;
 }
 
 
@@ -76,6 +88,14 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var counterOfRounds = 0;
+  var promOfInt = 0;
+  let sumOfInt = 0;
+  for(let i = 0; i < resultadosTest.length; i++){
+    sumOfInt = sumOfInt + resultadosTest[i];
+    counterOfRounds += 1;
+  } promOfInt = sumOfInt / counterOfRounds;
+    return promOfInt;
 }
 
 
