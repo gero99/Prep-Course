@@ -26,7 +26,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  
+  let plusOne = array.map(x => x + 1)
+  return plusOne;
 }
 
 
@@ -103,6 +104,8 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var biggerNumber = Math.max(numeros);
+  return biggerNumber;
 }
 
 
@@ -110,6 +113,11 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+ 
+ for(i = 0; i < arguments.length; i++) {
+  mult = mult * arguments[i];
+ } return mult;
+
 }
 
 
